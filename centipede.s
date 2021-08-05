@@ -1,28 +1,3 @@
-##################################################################### 
-# 
-# CSC258H Winter 2021 Assembly Final Project 
-# University of Toronto, St. George 
-# - Unit width in pixels: 8    
-# - Unit height in pixels: 8 
-# - Display width in pixels: 256 
-# - Display height in pixels: 256 
-# - Base Address for Display: 0x10008000 ($gp) 
-# 
-# Which milestone is reached in this submission? 
-# (See the project handout for descriptions of the milestones) 
-# - Milestone 4 (choose the one the applies) 
-# 
-# Which approved additional features have been implemented? 
-# (See the project handout for the list of additional features) 
-# 1. Scoreboard/score count, being displayed on screen and incremented on blaster shot
-# 2. Count the number of lives and display with icons
-# 3. Different Levels/Increased Difficulty. As game progresses, more mushrooms continue to spawn
-# 
-# Any additional information that the TA needs to know: 
-# - Ensure that the mips bitmap display is connected prior to running the code
-# - Otherwise the score board and lives will not display as they are drawn
-# - only once on init and then only redrawn when updated to save draw calls.
-######################################################################
 .data
 	displayAddress:  .word 0x10008000
 	
